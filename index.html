@@ -313,8 +313,8 @@ var index = setInterval(function() {
 }, 20);
 
 var countTime = setInterval(function(){
+	document.getElementById('remain').children[0].innerHTML = remain;
 	if(TIME == 0) {
-		document.getElementById('remain').children[0].innerHTML = 0;
 		clearInterval(index);
 		clearInterval(countTime);
 		alert("Game Over!最终得分：" + score.innerHTML);
@@ -327,7 +327,6 @@ var countTime = setInterval(function(){
 		offsetY.value = parseInt(offsetY.value) + 1;
 		level.innerHTML = parseInt(level.innerHTML) + 1;
 	} else {
-		document.getElementById('remain').children[0].innerHTML = remain;
 		remain--;
 	}
 }, 1000);
