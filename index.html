@@ -225,8 +225,6 @@
 				<span id="level">当前等级：<em>1</em>级</span>
 				&nbsp;|&nbsp;
 				<button id="restart" class="btn btn-default" onclick="restart()" disabled>重新开始</button>
-				<hr/>
-				<span>玩法：<em>只需要将鼠标保持在圈内即可得分，出圈不得分、不扣分，时间每次都会递减，直到为零，游戏结束。</em></span>
 			</div>
 			<div class="panel-body">
 				<canvas id="canvas" onmousemove="countScore(event)" style="border: 1px solid #000;"></canvas>
@@ -240,6 +238,8 @@
 					<label>y轴偏移量：</label>
 					<input class="form-control" id="offsetY" type="range" min="1" max="10" value="1" disabled />
 				</div>
+				<hr/>
+				<span>玩法：<em>只需要将鼠标保持在圈内即可得分，出圈不得分、不扣分，时间每次都会递减，直到为零，游戏结束。</em></span>
 			</div>
 		</div>
 	</div>
